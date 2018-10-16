@@ -63,22 +63,23 @@
   <ItemGroup>
     <Compile Include="Assets\coinController.cs" />
     <Compile Include="Assets\heroController.cs" />
+    <Compile Include="Assets\HeroControllerTest.cs" />
     <Compile Include="Assets\MaceController.cs" />
     <Compile Include="Assets\scri.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\TestScript.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Rael/Documents/GitHub/Andre-Unity2d/Game 2D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Rael/Documents/GitHub/game 2D/Game 2D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Rael/Documents/GitHub/Andre-Unity2d/Game 2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rael/Documents/GitHub/game 2D/Game 2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Rael/Documents/GitHub/Andre-Unity2d/Game 2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Rael/Documents/GitHub/game 2D/Game 2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Rael/Documents/GitHub/Andre-Unity2d/Game 2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Rael/Documents/GitHub/game 2D/Game 2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

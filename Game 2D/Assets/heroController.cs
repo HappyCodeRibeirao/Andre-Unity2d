@@ -4,30 +4,38 @@ using UnityEngine;
 
 public class heroController : MonoBehaviour {
 
-    public float moveX = 0f;
-    public float runSpeed = 40f;
-    public CharacterController2D controller;
-    bool jump;
 
+    public CharacterController2D moveController;
+    public float velocidade;
+    public Animator animator;
 
-    // Update is called once per frame
-    void Update() {
-
-        moveX = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+    private void FixedUpdate()
+    {
+        if (Input.GetKey("up"))
         {
-            jump = true;
+            moveController.Move(0, false, true);
+        }
+
+        if (Input.GetKey("right"))
+        {
+            moveController.Move(1 * velocidade, false, false);
+            animator.SetBool("estaCorrendo", true);
         }
         else
         {
-            jump = false;
+            if (Input.GetKey("left"))
+            {
+                moveController.Move(-1 * velocidade, false, false);
+                animator.SetBool("estaCorrendo", true);
+            }
+            else
+            {
+                animator.SetBool("estaCorrendo", false);
+            }
         }
 
-	}
-
-    void FixedUpdate()
-    {
-        controller.Move(moveX*Time.fixedDeltaTime,false, jump);  
+        
+        
     }
+ 
 }

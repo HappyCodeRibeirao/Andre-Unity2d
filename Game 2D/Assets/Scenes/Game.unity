@@ -319,7 +319,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.7, y: -0.2, z: -15}
+  m_LocalPosition: {x: 2.15, y: -2.13, z: -15}
   m_LocalScale: {x: 1.08, y: 1.08, z: 0.7438284}
   m_Children: []
   m_Father: {fileID: 0}
@@ -767,10 +767,11 @@ GameObject:
   - component: {fileID: 1909981364}
   - component: {fileID: 1909981366}
   - component: {fileID: 1909981369}
-  - component: {fileID: 1909981363}
   - component: {fileID: 1909981370}
   - component: {fileID: 1909981367}
   - component: {fileID: 1909981365}
+  - component: {fileID: 1909981368}
+  - component: {fileID: 1909981363}
   m_Layer: 0
   m_Name: Heroi
   m_TagString: Untagged
@@ -789,9 +790,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a11504c53cb86641a35a8b98aa25ca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveX: 0.1
-  runSpeed: 40
-  controller: {fileID: 1909981369}
+  moveController: {fileID: 1909981369}
+  velocidade: 0.5
+  animator: {fileID: 1909981367}
 --- !u!4 &1909981364
 Transform:
   m_ObjectHideFlags: 0
@@ -799,7 +800,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1909981362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.39, y: -3.45, z: -0.09765625}
+  m_LocalPosition: {x: 3.61, y: -2.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1267179294}
@@ -839,8 +840,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1392870405
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -891,6 +892,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1909981368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909981362}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332d00d06c0d7c54b99ad7aa7777ec30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1909981369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,9 +914,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8886bdcd15b90941af73fb1be3311d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 450
-  m_CrouchSpeed: 0.36
-  m_MovementSmoothing: 0.05
+  m_JumpForce: 150
+  m_CrouchSpeed: 0.25
+  m_MovementSmoothing: 0.02
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
